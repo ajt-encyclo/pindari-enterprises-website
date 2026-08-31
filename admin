@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Pindari Enterprises</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-950 text-white p-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">Pindari Admin Management</h1>
+        <a href="index.html" class="text-sm bg-blue-800 px-3 py-1 rounded">Back to Main Site</a>
+    </header>
+
+    <div class="max-w-7xl mx-auto p-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-gray-500 font-bold text-sm">TOTAL REQUIREMENTS</h3>
+                <p id="totalRequirementsCount" class="text-3xl font-extrabold text-blue-900 mt-2">0</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-gray-500 font-bold text-sm">TOTAL CANDIDATES</h3>
+                <p id="totalCandidatesCount" class="text-3xl font-extrabold text-blue-900 mt-2">0</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-gray-500 font-bold text-sm">RECENT ACTIVITY</h3>
+                <p class="text-sm text-gray-600 mt-2">Daily backups active & encrypted storage enabled.</p>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow mb-8">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-4 gap-4">
+                <h2 class="text-xl font-bold text-blue-900">Employer Requirements</h2>
+                <button onclick="exportTableToCSV('employerTable', 'Employer_Requirements.csv')" class="bg-green-600 text-white px-4 py-2 rounded text-sm font-semibold hover:bg-green-700">Export to CSV</button>
+            </div>
+            <input type="text" id="filterEmployerInput" onkeyup="filterEmployerTable()" placeholder="Search by company, category, or location..." class="w-full border p-2 rounded mb-4 text-sm">
+            <div class="overflow-x-auto">
+                <table id="employerTable" class="w-full text-left text-sm border-collapse">
+                    <thead>
+                        <tr class="bg-gray-100 border-b">
+                            <th class="p-2">Company</th>
+                            <th class="p-2">Contact</th>
+                            <th class="p-2">Category</th>
+                            <th class="p-2">Workers</th>
+                            <th class="p-2">Location</th>
+                            <th class="p-2">Status Tag</th>
+                        </tr>
+                    </thead>
+                    <tbody id="employerTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-4 gap-4">
+                <h2 class="text-xl font-bold text-blue-900">Candidate Applications</h2>
+                <button onclick="exportTableToCSV('candidateTable', 'Candidate_Applications.csv')" class="bg-green-600 text-white px-4 py-2 rounded text-sm font-semibold hover:bg-green-700">Export to CSV</button>
+            </div>
+            <input type="text" id="filterCandidateInput" onkeyup="filterCandidateTable()" placeholder="Search by name, experience, or qualification..." class="w-full border p-2 rounded mb-4 text-sm">
+            <div class="overflow-x-auto">
+                <table id="candidateTable" class="w-full text-left text-sm border-collapse">
+                    <thead>
+                        <tr class="bg-gray-100 border-b">
+                            <th class="p-2">Name</th>
+                            <th class="p-2">Mobile</th>
+                            <th class="p-2">Qualification</th>
+                            <th class="p-2">Designation</th>
+                            <th class="p-2">Experience</th>
+                            <th class="p-2">Status Tag</th>
+                        </tr>
+                    </thead>
+                    <tbody id="candidateTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', loadAdminData);
+    </script>
+</body>
+</html>
