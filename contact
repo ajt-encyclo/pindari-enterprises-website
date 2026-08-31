@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us & Job Registration | Pindari Enterprises</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+    <nav class="bg-blue-900 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">Pindari Enterprises</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-amber-400">Home</a>
+                <a href="about.html" class="hover:text-amber-400">About Us</a>
+                <a href="services.html" class="hover:text-amber-400">Services</a>
+                <a href="for-companies.html" class="hover:text-amber-400">For Companies</a>
+                <a href="contact.html" class="text-amber-400 font-semibold">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-4 py-10 flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white p-6 rounded-lg shadow border">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4">Contact Information</h2>
+                <p class="mb-2"><strong>Leadership:</strong> Mr. Pawan Mishra</p>
+                <p class="mb-2"><strong>Location Hubs:</strong> Bhosari, Chakan, Talawade, Moshi (Pune, MH)</p>
+                <p class="mb-2"><strong>Email:</strong> contact@pindarienterprises.com</p>
+                <p class="mb-4"><strong>Phone:</strong> +91 98XXXXXXXX</p>
+                <a href="https://wa.me/919800000000" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold px-6 py-2 rounded-lg shadow">Chat on WhatsApp</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow border">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4">General Enquiry</h2>
+                <form id="generalEnquiryForm" class="space-y-3">
+                    <input type="text" placeholder="Your Name" required class="w-full border p-2 rounded">
+                    <input type="email" placeholder="Your Email" required class="w-full border p-2 rounded">
+                    <textarea placeholder="Message" rows="3" required class="w-full border p-2 rounded"></textarea>
+                    <button type="submit" class="bg-blue-900 text-white font-bold px-4 py-2 rounded hover:bg-blue-800">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="job-seeker" class="bg-white p-8 rounded-lg shadow-md border">
+            <h2 class="text-2xl font-bold text-blue-900 mb-2">Job Seeker Registration Form</h2>
+            <p class="text-sm text-gray-500 mb-6">Free Job Guidance | No Fake Promises | Direct Placement Opportunities</p>
+            
+            <form id="candidateRegistrationForm" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                    <label class="block text-xs font-semibold mb-1">Applicant Name</label>
+                    <input type="text" name="applicantName" required class="w-full border p-2 rounded text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold mb-1">Father's Name</label>
+                    <input type="text" name="fatherName" required class="w-full border p-2 rounded text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold mb-1">Date of Birth</label>
+                    <input type="date" name="dob" required class="w-full border p-2 rounded text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold mb-1">Marital Status</label>
+                    <select name="maritalStatus" class="w-full border p-2 rounded text-sm">
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold mb-1">Mobile No.</label>
+                    <input type="tel" name="mobile" required class="w-full border p-2 rounded text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold mb-1">Alternate Mobile</label>
+                    <input type="tel" name="altMobile" class="w-full border p-2 rounded text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold mb-1">Aadhaar No.</label>
+                    <input type="text" name="aadhaarNo" required class="w-full border p-2 rounded text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold mb-1">PAN No.</label>
+                    <input type="text" name="panNo" class="w-full border p-2 rounded text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold mb-1">Qualification</label>
+                    <input type="text" name="qualification" required class="w-full border p-2 rounded text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold mb-1">Designation Applied For</label>
+                    <input type="text" name="designation" placeholder="e.g. CNC Operator, Fitter" required class="w-full border p-2 rounded text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold mb-1">Total Experience (Years)</label>
+                    <input type="text" name="experience" required class="w-full border p-2 rounded text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold mb-1">UAN Number (Optional)</label>
+                    <input type="text" name="uan" class="w-full border p-2 rounded text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold mb-1">ESIC Number (Optional)</label>
+                    <input type="text" name="esic" class="w-full border p-2 rounded text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold mb-1">Bank Name</label>
+                    <input type="text" name="bankName" class="w-full border p-2 rounded text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold mb-1">Account No.</label>
+                    <input type="text" name="accountNo" class="w-full border p-2 rounded text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold mb-1">IFSC Code</label>
+                    <input type="text" name="ifsc" class="w-full border p-2 rounded text-sm">
+                </div>
+                <div class="md:col-span-2">
+                    <label class="block text-xs font-semibold mb-1">Branch Name</label>
+                    <input type="text" name="branch" class="w-full border p-2 rounded text-sm">
+                </div>
+                <div class="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold mb-1">Present Address</label>
+                        <textarea name="presentAddress" rows="2" required class="w-full border p-2 rounded text-sm"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold mb-1">Permanent Address</label>
+                        <textarea name="permanentAddress" rows="2" required class="w-full border p-2 rounded text-sm"></textarea>
+                    </div>
+                </div>
+                <div class="md:col-span-3">
+                    <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-blue-950 font-bold py-3 rounded shadow transition">Submit Registration</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="bg-blue-950 text-white py-6 text-center">
+        <p>&copy; 2026 Pindari Enterprises. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
