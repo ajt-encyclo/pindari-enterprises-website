@@ -3,142 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us & Job Registration | Pindari Enterprises</title>
+    <title>Contact Us | Pindari Enterprises</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
-    <nav class="bg-blue-900 text-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold">Pindari Enterprises</a>
-            <div class="hidden md:flex space-x-6">
-                <a href="index.html" class="hover:text-amber-400">Home</a>
-                <a href="about.html" class="hover:text-amber-400">About Us</a>
-                <a href="services.html" class="hover:text-amber-400">Services</a>
-                <a href="for-companies.html" class="hover:text-amber-400">For Companies</a>
-                <a href="contact.html" class="text-amber-400 font-semibold">Contact Us</a>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen relative">
+    <nav class="bg-white text-gray-900 shadow-md sticky top-0 z-40 border-b-2 border-red-600">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-red-600 rounded flex items-center justify-center text-white font-black text-xl tracking-wider shadow">PE</div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-gray-900 block leading-none">PINDARI ENTERPRISES</span>
+                    <span class="text-xs text-red-600 font-semibold tracking-widest">STAFFING & SERVICES</span>
+                </div>
+            </a>
+            <div class="hidden md:flex space-x-6 font-medium">
+                <a href="index.html" class="hover:text-red-600 transition">Home</a>
+                <a href="about.html" class="hover:text-red-600 transition">About Us</a>
+                <a href="services.html" class="hover:text-red-600 transition">Services</a>
+                <a href="for-companies.html" class="hover:text-red-600 transition">For Companies</a>
+                <a href="contact.html" class="text-red-600 font-bold">Contact Us</a>
             </div>
         </div>
     </nav>
 
-    <main class="max-w-5xl mx-auto px-4 py-10 flex-grow">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div class="bg-white p-6 rounded-lg shadow border">
-                <h2 class="text-2xl font-bold text-blue-900 mb-4">Contact Information</h2>
-                <p class="mb-2"><strong>Leadership:</strong> Mr. Pawan Mishra</p>
-                <p class="mb-2"><strong>Location Hubs:</strong> Bhosari, Chakan, Talawade, Moshi (Pune, MH)</p>
-                <p class="mb-2"><strong>Email:</strong> contact@pindarienterprises.com</p>
-                <p class="mb-4"><strong>Phone:</strong> +91 98XXXXXXXX</p>
-                <a href="https://wa.me/919800000000" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold px-6 py-2 rounded-lg shadow">Chat on WhatsApp</a>
+    <div class="max-w-7xl mx-auto px-4 py-12 flex-grow">
+        <h1 class="text-4xl font-extrabold text-gray-900 text-center mb-10">Get In <span class="text-red-600">Touch</span></h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-red-600 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Office Details</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <i class="fa-solid fa-location-dot text-red-600 text-2xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Address</h4>
+                                <p class="text-gray-600">Sunrise Tower, Nigdi, Pune - 411044</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="fa-solid fa-phone text-red-600 text-2xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Phone</h4>
+                                <p class="text-gray-600">+91 9860109069</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-6 border-t">
+                    <a href="https://wa.me/919860109069" target="_blank" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-lg shadow flex items-center justify-center space-x-2 transition">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Chat on WhatsApp</span>
+                    </a>
+                </div>
             </div>
 
-            <div class="bg-white p-6 rounded-lg shadow border">
-                <h2 class="text-2xl font-bold text-blue-900 mb-4">General Enquiry</h2>
-                <form id="generalEnquiryForm" class="space-y-3">
-                    <input type="text" placeholder="Your Name" required class="w-full border p-2 rounded">
-                    <input type="email" placeholder="Your Email" required class="w-full border p-2 rounded">
-                    <textarea placeholder="Message" rows="3" required class="w-full border p-2 rounded"></textarea>
-                    <button type="submit" class="bg-blue-900 text-white font-bold px-4 py-2 rounded hover:bg-blue-800">Send Message</button>
+            <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-red-600">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Job Seeker Registration</h3>
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700">Full Name</label>
+                        <input type="text" class="w-full mt-1 p-3 border rounded-lg focus:ring-2 focus:ring-red-600 focus:outline-none" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700">Phone Number</label>
+                        <input type="tel" class="w-full mt-1 p-3 border rounded-lg focus:ring-2 focus:ring-red-600 focus:outline-none" placeholder="+91 98XXXXXXXX">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700">Category / Skill</label>
+                        <select class="w-full mt-1 p-3 border rounded-lg focus:ring-2 focus:ring-red-600 focus:outline-none">
+                            <option>Skilled Worker (Operator / Welder)</option>
+                            <option>Semi-Skilled / Helper</option>
+                            <option>Unskilled Labor</option>
+                            <option>Housekeeping Staff</option>
+                            <option>Security Guard</option>
+                        </select>
+                    </div>
+                    <button type="button" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg shadow-md transition">Submit Registration</button>
                 </form>
             </div>
         </div>
+    </div>
 
-        <div id="job-seeker" class="bg-white p-8 rounded-lg shadow-md border">
-            <h2 class="text-2xl font-bold text-blue-900 mb-2">Job Seeker Registration Form</h2>
-            <p class="text-sm text-gray-500 mb-6">Free Job Guidance | No Fake Promises | Direct Placement Opportunities</p>
-            
-            <form id="candidateRegistrationForm" class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div>
-                    <label class="block text-xs font-semibold mb-1">Applicant Name</label>
-                    <input type="text" name="applicantName" required class="w-full border p-2 rounded text-sm">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold mb-1">Father's Name</label>
-                    <input type="text" name="fatherName" required class="w-full border p-2 rounded text-sm">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold mb-1">Date of Birth</label>
-                    <input type="date" name="dob" required class="w-full border p-2 rounded text-sm">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold mb-1">Marital Status</label>
-                    <select name="maritalStatus" class="w-full border p-2 rounded text-sm">
-                        <option value="Single">Single</option>
-                        <option value="Married">Married</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold mb-1">Mobile No.</label>
-                    <input type="tel" name="mobile" required class="w-full border p-2 rounded text-sm">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold mb-1">Alternate Mobile</label>
-                    <input type="tel" name="altMobile" class="w-full border p-2 rounded text-sm">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold mb-1">Aadhaar No.</label>
-                    <input type="text" name="aadhaarNo" required class="w-full border p-2 rounded text-sm">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold mb-1">PAN No.</label>
-                    <input type="text" name="panNo" class="w-full border p-2 rounded text-sm">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold mb-1">Qualification</label>
-                    <input type="text" name="qualification" required class="w-full border p-2 rounded text-sm">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold mb-1">Designation Applied For</label>
-                    <input type="text" name="designation" placeholder="e.g. CNC Operator, Fitter" required class="w-full border p-2 rounded text-sm">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold mb-1">Total Experience (Years)</label>
-                    <input type="text" name="experience" required class="w-full border p-2 rounded text-sm">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold mb-1">UAN Number (Optional)</label>
-                    <input type="text" name="uan" class="w-full border p-2 rounded text-sm">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold mb-1">ESIC Number (Optional)</label>
-                    <input type="text" name="esic" class="w-full border p-2 rounded text-sm">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold mb-1">Bank Name</label>
-                    <input type="text" name="bankName" class="w-full border p-2 rounded text-sm">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold mb-1">Account No.</label>
-                    <input type="text" name="accountNo" class="w-full border p-2 rounded text-sm">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold mb-1">IFSC Code</label>
-                    <input type="text" name="ifsc" class="w-full border p-2 rounded text-sm">
-                </div>
-                <div class="md:col-span-2">
-                    <label class="block text-xs font-semibold mb-1">Branch Name</label>
-                    <input type="text" name="branch" class="w-full border p-2 rounded text-sm">
-                </div>
-                <div class="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-semibold mb-1">Present Address</label>
-                        <textarea name="presentAddress" rows="2" required class="w-full border p-2 rounded text-sm"></textarea>
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold mb-1">Permanent Address</label>
-                        <textarea name="permanentAddress" rows="2" required class="w-full border p-2 rounded text-sm"></textarea>
-                    </div>
-                </div>
-                <div class="md:col-span-3">
-                    <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-blue-950 font-bold py-3 rounded shadow transition">Submit Registration</button>
-                </div>
-            </form>
+    <footer class="bg-gray-900 text-white py-8 mt-auto border-t-4 border-red-600">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-xl font-bold mb-2">PINDARI ENTERPRISES</h3>
+            <p class="text-gray-400 text-sm mb-4">Sunrise Tower, Nigdi, Pune - 411044 | Contact: +91 9860109069</p>
+            <p class="text-gray-500 text-xs">&copy; 2026 Pindari Enterprises. All Rights Reserved.</p>
         </div>
-    </main>
-
-    <footer class="bg-blue-950 text-white py-6 text-center">
-        <p>&copy; 2026 Pindari Enterprises. All rights reserved.</p>
     </footer>
 
-    <script src="js/main.js"></script>
+    <a href="https://wa.me/919860109069?text=Hello%20Pindari%20Enterprises,%20I%20want%20to%20apply%20for%20a%20job." target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition z-50">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
 </body>
 </html>
