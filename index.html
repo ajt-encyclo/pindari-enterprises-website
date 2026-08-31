@@ -3,71 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pindari Enterprises | Naukri Se Staff Tak, Pindari Hai Aapke Saath!</title>
-    <meta name="description" content="Pindari Enterprises - Pune's trusted manpower solution company led by Mr. Pawan Mishra.">
+    <title>Pindari Enterprises | Staffing & Placement Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .brand-red { color: #DC2626; }
+        .bg-brand-red { background-color: #DC2626; }
+        .hover-bg-brand-red:hover { background-color: #B91C1C; }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen relative">
 
-    <nav class="bg-blue-900 text-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold tracking-wide">Pindari Enterprises</a>
+    <!-- Navigation Header -->
+    <nav class="bg-white text-gray-900 shadow-md sticky top-0 z-40 border-b-2 border-red-600">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-red-600 rounded flex items-center justify-center text-white font-black text-xl tracking-wider shadow">
+                    PE
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-gray-900 block leading-none">PINDARI ENTERPRISES</span>
+                    <span class="text-xs text-red-600 font-semibold tracking-widest">STAFFING & SERVICES</span>
+                </div>
+            </a>
             <div class="hidden md:flex space-x-6 font-medium">
-                <a href="index.html" class="hover:text-amber-400 transition">Home</a>
-                <a href="about.html" class="hover:text-amber-400 transition">About Us</a>
-                <a href="services.html" class="hover:text-amber-400 transition">Services</a>
-                <a href="for-companies.html" class="hover:text-amber-400 transition">For Companies</a>
-                <a href="contact.html" class="hover:text-amber-400 transition">Contact Us</a>
-                <a href="admin.html" class="bg-amber-500 hover:bg-amber-600 px-3 py-1 rounded text-blue-950 font-semibold transition">Admin</a>
+                <a href="index.html" class="text-red-600 font-bold">Home</a>
+                <a href="about.html" class="hover:text-red-600 transition">About Us</a>
+                <a href="services.html" class="hover:text-red-600 transition">Services</a>
+                <a href="for-companies.html" class="hover:text-red-600 transition">For Companies</a>
+                <a href="contact.html" class="hover:text-red-600 transition">Contact Us</a>
             </div>
         </div>
     </nav>
 
-    <section class="bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-20 px-4 text-center">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Naukri Se Staff Tak, Pindari Hai Aapke Saath!</h1>
-            <p class="text-xl md:text-2xl mb-8 text-blue-100">Har Skill Ka Solution, Har Company Ka Bharosa. Connecting Right Talent to Right Opportunity.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="contact.html#job-seeker" class="bg-amber-500 hover:bg-amber-600 text-blue-950 font-bold px-8 py-4 rounded-lg shadow-lg text-lg transition">Looking for a Job</a>
-                <a href="for-companies.html#employer-form" class="bg-white hover:bg-gray-100 text-blue-900 font-bold px-8 py-4 rounded-lg shadow-lg text-lg transition">Need Manpower</a>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-gray-900 via-gray-800 to-red-950 text-white py-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Trusted Recruitment Partner</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight">
+                Naukri Se Staff Tak <br><span class="text-red-500">Pindari Enterprises</span> Ke Sath
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                Providing Skilled, Semi-Skilled, Unskilled, and Industrial Staffing Solutions across Nigdi, Bhosari, Chakan, and PCMC Industrial Zones.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="contact.html" class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-bold shadow-lg transition text-center">Apply for Job</a>
+                <a href="for-companies.html" class="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 rounded-lg font-bold shadow-lg transition text-center">Hire Manpower</a>
             </div>
         </div>
     </section>
 
-    <section class="bg-gray-200 py-6 text-center">
-        <p class="text-xs uppercase font-semibold text-gray-500 tracking-wider mb-4">Trusted Manpower Partner Across Top MNC Hubs of Pune (Bhosari, Chakan, Talawade, Moshi)</p>
-        <div class="flex justify-center items-center space-x-8 opacity-75 font-bold text-gray-600 text-lg">
-            <span>[ Industrial Hub Bhosari ]</span>
-            <span>[ Auto Hub Chakan ]</span>
-            <span>[ IT & Manufacturing Talawade ]</span>
-            <span>[ Industrial Area Moshi ]</span>
-        </div>
-    </section>
-
-    <section class="py-16 max-w-7xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Our Core Staffing Solutions</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
-                <h3 class="text-xl font-bold text-blue-900 mb-2">Industrial & Technical Staffing</h3>
-                <p class="text-gray-600">Experienced Fitters, Welders, CNC Operators, and Electricians ready for quick deployment.</p>
+    <!-- Key Information Banner -->
+    <section class="bg-white py-8 border-b">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div class="p-4 border rounded-lg shadow-sm">
+                <i class="fa-solid fa-location-dot text-red-600 text-3xl mb-2"></i>
+                <h3 class="font-bold text-gray-900">Office Location</h3>
+                <p class="text-gray-600 text-sm mt-1">Sunrise Tower, Nigdi - 411044</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
-                <h3 class="text-xl font-bold text-blue-900 mb-2">Skilled & Support Staff</h3>
-                <p class="text-gray-600">Qualified office staff, security personnel, and housekeeping teams tailored to your needs.</p>
+            <div class="p-4 border rounded-lg shadow-sm">
+                <i class="fa-solid fa-phone text-red-600 text-3xl mb-2"></i>
+                <h3 class="font-bold text-gray-900">Direct Contact</h3>
+                <p class="text-gray-600 text-sm mt-1">+91 9860109069</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
-                <h3 class="text-xl font-bold text-blue-900 mb-2">Unskilled & Semi-Skilled Workforce</h3>
-                <p class="text-gray-600">Verified helpers, factory hands, and general staff for industrial scale operations.</p>
+            <div class="p-4 border rounded-lg shadow-sm">
+                <i class="fa-solid fa-user-check text-red-600 text-3xl mb-2"></i>
+                <h3 class="font-bold text-gray-900">Leadership</h3>
+                <p class="text-gray-600 text-sm mt-1">20+ Years Industrial Experience</p>
             </div>
         </div>
     </section>
 
-    <footer class="bg-blue-950 text-white mt-auto py-8">
+    <!-- Happy Clients Section (Updated from Excel Sheet) -->
+    <section class="py-16 bg-gray-100 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Our Esteemed Clients</h2>
+                <p class="text-gray-600 mt-2">Companies trusting Pindari Enterprises for manpower supply</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Client 1 -->
+                <div class="bg-white p-6 rounded-lg shadow border-t-4 border-red-600">
+                    <h3 class="font-bold text-xl text-gray-900 mb-1">Dankal Tech</h3>
+                    <p class="text-sm text-gray-500"><i class="fa-solid fa-user text-red-600 mr-2"></i>Mr. Sachin Dandekar</p>
+                </div>
+                <!-- Client 2 -->
+                <div class="bg-white p-6 rounded-lg shadow border-t-4 border-red-600">
+                    <h3 class="font-bold text-xl text-gray-900 mb-1">R K Polymer</h3>
+                    <p class="text-sm text-gray-500"><i class="fa-solid fa-user text-red-600 mr-2"></i>Mr. Amol Shah</p>
+                </div>
+                <!-- Client 3 -->
+                <div class="bg-white p-6 rounded-lg shadow border-t-4 border-red-600">
+                    <h3 class="font-bold text-xl text-gray-900 mb-1">Kraft Plast Inds</h3>
+                    <p class="text-sm text-gray-500"><i class="fa-solid fa-user text-red-600 mr-2"></i>Mr. Sanket Shah</p>
+                </div>
+                <!-- Client 4 -->
+                <div class="bg-white p-6 rounded-lg shadow border-t-4 border-red-600">
+                    <h3 class="font-bold text-xl text-gray-900 mb-1">Apex Engineers</h3>
+                    <p class="text-sm text-gray-500"><i class="fa-solid fa-user text-red-600 mr-2"></i>Mr. Murti</p>
+                </div>
+                <!-- Client 5 -->
+                <div class="bg-white p-6 rounded-lg shadow border-t-4 border-red-600">
+                    <h3 class="font-bold text-xl text-gray-900 mb-1">Suhas Enterprises</h3>
+                    <p class="text-sm text-gray-500"><i class="fa-solid fa-user text-red-600 mr-2"></i>Mr. Ganesh Sathe</p>
+                </div>
+                <!-- Client 6 -->
+                <div class="bg-white p-6 rounded-lg shadow border-t-4 border-red-600">
+                    <h3 class="font-bold text-xl text-gray-900 mb-1">B N Tools & Components</h3>
+                    <p class="text-sm text-gray-500"><i class="fa-solid fa-user text-red-600 mr-2"></i>Mrs. Reshma Patil</p>
+                </div>
+                <!-- Client 7 -->
+                <div class="bg-white p-6 rounded-lg shadow border-t-4 border-red-600">
+                    <h3 class="font-bold text-xl text-gray-900 mb-1">Technova</h3>
+                    <p class="text-sm text-gray-500"><i class="fa-solid fa-user text-red-600 mr-2"></i>Mr. Jitendra Kelkar</p>
+                </div>
+                <!-- Client 8 -->
+                <div class="bg-white p-6 rounded-lg shadow border-t-4 border-red-600">
+                    <h3 class="font-bold text-xl text-gray-900 mb-1">Gennext Mold</h3>
+                    <p class="text-sm text-gray-500"><i class="fa-solid fa-user text-red-600 mr-2"></i>Mr. Ramakrishna Chilakapati</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-auto border-t-4 border-red-600">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <p>&copy; 2026 Pindari Enterprises. All rights reserved. | Leadership: Mr. Pawan Mishra (20+ Years Experience)</p>
+            <h3 class="text-xl font-bold mb-2">PINDARI ENTERPRISES</h3>
+            <p class="text-gray-400 text-sm mb-4">Sunrise Tower, Nigdi, Pune - 411044 | Contact: +91 9860109069</p>
+            <p class="text-gray-500 text-xs">&copy; 2026 Pindari Enterprises. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919860109069?text=Hello%20Pindari%20Enterprises,%20I%20have%20an%20inquiry." target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition z-50">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
 </body>
 </html>
