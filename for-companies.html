@@ -5,97 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For Companies | Pindari Enterprises</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
-    <nav class="bg-blue-900 text-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold">Pindari Enterprises</a>
-            <div class="hidden md:flex space-x-6">
-                <a href="index.html" class="hover:text-amber-400">Home</a>
-                <a href="about.html" class="hover:text-amber-400">About Us</a>
-                <a href="services.html" class="hover:text-amber-400">Services</a>
-                <a href="for-companies.html" class="text-amber-400 font-semibold">For Companies</a>
-                <a href="contact.html" class="hover:text-amber-400">Contact Us</a>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen relative">
+    <nav class="bg-white text-gray-900 shadow-md sticky top-0 z-40 border-b-2 border-red-600">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-red-600 rounded flex items-center justify-center text-white font-black text-xl tracking-wider shadow">PE</div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-gray-900 block leading-none">PINDARI ENTERPRISES</span>
+                    <span class="text-xs text-red-600 font-semibold tracking-widest">STAFFING & SERVICES</span>
+                </div>
+            </a>
+            <div class="hidden md:flex space-x-6 font-medium">
+                <a href="index.html" class="hover:text-red-600 transition">Home</a>
+                <a href="about.html" class="hover:text-red-600 transition">About Us</a>
+                <a href="services.html" class="hover:text-red-600 transition">Services</a>
+                <a href="for-companies.html" class="text-red-600 font-bold">For Companies</a>
+                <a href="contact.html" class="hover:text-red-600 transition">Contact Us</a>
             </div>
         </div>
     </nav>
 
-    <main class="max-w-4xl mx-auto px-4 py-10 flex-grow">
-        <h1 class="text-3xl font-bold text-blue-900 text-center mb-6">Employer Staffing Portal</h1>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10 text-center">
-            <div class="bg-white p-4 rounded shadow border border-blue-100">
-                <span class="block font-bold text-blue-900 text-lg">100% Verified</span>
-                <span class="text-xs text-gray-500">Background Checked</span>
-            </div>
-            <div class="bg-white p-4 rounded shadow border border-blue-100">
-                <span class="block font-bold text-blue-900 text-lg">Same Day</span>
-                <span class="text-xs text-gray-500">Rapid Deployment</span>
-            </div>
-            <div class="bg-white p-4 rounded shadow border border-blue-100">
-                <span class="block font-bold text-blue-900 text-lg">Replacement</span>
-                <span class="text-xs text-gray-500">Guaranteed Support</span>
-            </div>
-            <div class="bg-white p-4 rounded shadow border border-blue-100">
-                <span class="block font-bold text-blue-900 text-lg">Contract & Payroll</span>
-                <span class="text-xs text-gray-500">Complete Management</span>
-            </div>
-        </div>
-
-        <div id="employer-form" class="bg-white p-8 rounded-lg shadow-md border">
-            <h2 class="text-2xl font-bold text-blue-900 mb-6">Employer Hiring Requirement Form</h2>
-            <form id="employerReqForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="max-w-7xl mx-auto px-4 py-12 flex-grow">
+        <h1 class="text-4xl font-extrabold text-gray-900 text-center mb-4">Hire <span class="text-red-600">Industrial Manpower</span></h1>
+        <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">Submit your staffing requirement below and our business development team will reach out immediately.</p>
+        
+        <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-red-600 max-w-2xl mx-auto">
+            <form class="space-y-4">
                 <div>
-                    <label class="block text-sm font-semibold mb-1">Company Name</label>
-                    <input type="text" name="companyName" required class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-900">
+                    <label class="block text-sm font-bold text-gray-700">Company Name</label>
+                    <input type="text" class="w-full mt-1 p-3 border rounded-lg focus:ring-2 focus:ring-red-600 focus:outline-none" placeholder="e.g. Acme Industrial Ltd.">
                 </div>
                 <div>
-                    <label class="block text-sm font-semibold mb-1">Contact Person</label>
-                    <input type="text" name="contactPerson" required class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-900">
+                    <label class="block text-sm font-bold text-gray-700">Contact Person Name</label>
+                    <input type="text" class="w-full mt-1 p-3 border rounded-lg focus:ring-2 focus:ring-red-600 focus:outline-none" placeholder="Your Name">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700">Phone Number</label>
+                        <input type="tel" class="w-full mt-1 p-3 border rounded-lg focus:ring-2 focus:ring-red-600 focus:outline-none" placeholder="+91 98XXXXXXXX">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700">Required Staff Count</label>
+                        <input type="number" class="w-full mt-1 p-3 border rounded-lg focus:ring-2 focus:ring-red-600 focus:outline-none" placeholder="e.g. 10">
+                    </div>
                 </div>
                 <div>
-                    <label class="block text-sm font-semibold mb-1">Phone / WhatsApp</label>
-                    <input type="tel" name="phone" required class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-900">
+                    <label class="block text-sm font-bold text-gray-700">Manpower Requirements Detail</label>
+                    <textarea class="w-full mt-1 p-3 border rounded-lg focus:ring-2 focus:ring-red-600 focus:outline-none" rows="4" placeholder="Specify skills, shift timings, factory location..."></textarea>
                 </div>
-                <div>
-                    <label class="block text-sm font-semibold mb-1">Company Email</label>
-                    <input type="email" name="email" required class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-900">
-                </div>
-                <div>
-                    <label class="block text-sm font-semibold mb-1">Category Required</label>
-                    <select name="category" class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-900">
-                        <option value="Skilled/Technical">Skilled / Technical</option>
-                        <option value="Industrial Staffing">Industrial Staffing</option>
-                        <option value="Semi-Skilled">Semi-Skilled</option>
-                        <option value="Unskilled Helper">Unskilled Helper</option>
-                        <option value="Office & Support">Office & Support</option>
-                        <option value="female only">female only</option>
-                        <option value="Security & Housekeeping">Security & Housekeeping</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-sm font-semibold mb-1">No. of Workers Needed</label>
-                    <input type="number" name="workersNeeded" required class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-900">
-                </div>
-                <div class="md:col-span-2">
-                    <label class="block text-sm font-semibold mb-1">Job Location (e.g., Bhosari, Chakan, etc.)</label>
-                    <input type="text" name="location" required class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-900">
-                </div>
-                <div class="md:col-span-2">
-                    <label class="block text-sm font-semibold mb-1">Detailed Requirements</label>
-                    <textarea name="requirements" rows="4" class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-900"></textarea>
-                </div>
-                <div class="md:col-span-2">
-                    <button type="submit" class="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded shadow transition">Submit Hiring Requirement</button>
-                </div>
+                <button type="button" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg shadow-md transition">Submit Requirement</button>
             </form>
         </div>
-    </main>
+    </div>
 
-    <footer class="bg-blue-950 text-white py-6 text-center">
-        <p>&copy; 2026 Pindari Enterprises. All rights reserved.</p>
+    <footer class="bg-gray-900 text-white py-8 mt-auto border-t-4 border-red-600">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-xl font-bold mb-2">PINDARI ENTERPRISES</h3>
+            <p class="text-gray-400 text-sm mb-4">Sunrise Tower, Nigdi, Pune - 411044 | Contact: +91 9860109069</p>
+            <p class="text-gray-500 text-xs">&copy; 2026 Pindari Enterprises. All Rights Reserved.</p>
+        </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <a href="https://wa.me/919860109069?text=Hello%20Pindari%20Enterprises,%20We%20need%20manpower." target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition z-50">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
 </body>
 </html>
