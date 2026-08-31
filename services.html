@@ -5,54 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Pindari Enterprises</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
-    <nav class="bg-blue-900 text-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold">Pindari Enterprises</a>
-            <div class="hidden md:flex space-x-6">
-                <a href="index.html" class="hover:text-amber-400">Home</a>
-                <a href="about.html" class="hover:text-amber-400">About Us</a>
-                <a href="services.html" class="text-amber-400 font-semibold">Services</a>
-                <a href="for-companies.html" class="hover:text-amber-400">For Companies</a>
-                <a href="contact.html" class="hover:text-amber-400">Contact Us</a>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen relative">
+    <nav class="bg-white text-gray-900 shadow-md sticky top-0 z-40 border-b-2 border-red-600">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-red-600 rounded flex items-center justify-center text-white font-black text-xl tracking-wider shadow">PE</div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-gray-900 block leading-none">PINDARI ENTERPRISES</span>
+                    <span class="text-xs text-red-600 font-semibold tracking-widest">STAFFING & SERVICES</span>
+                </div>
+            </a>
+            <div class="hidden md:flex space-x-6 font-medium">
+                <a href="index.html" class="hover:text-red-600 transition">Home</a>
+                <a href="about.html" class="hover:text-red-600 transition">About Us</a>
+                <a href="services.html" class="text-red-600 font-bold">Services</a>
+                <a href="for-companies.html" class="hover:text-red-600 transition">For Companies</a>
+                <a href="contact.html" class="hover:text-red-600 transition">Contact Us</a>
             </div>
         </div>
     </nav>
 
-    <main class="max-w-7xl mx-auto px-4 py-12 flex-grow">
-        <h1 class="text-4xl font-bold text-blue-900 text-center mb-10">Staffing Categories Offered</h1>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
-                <h3 class="text-xl font-bold text-blue-900 mb-2">Industrial Staffing</h3>
-                <p class="text-gray-600">Fitter, Welder, CNC Operator, Lathe Machine Operators, Assembly Line Workers.</p>
+    <div class="max-w-7xl mx-auto px-4 py-12 flex-grow">
+        <h1 class="text-4xl font-extrabold text-gray-900 text-center mb-10">Our Staffing <span class="text-red-600">Services</span></h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-red-600">
+                <i class="fa-solid fa-gears text-red-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Skilled Staffing</h3>
+                <p class="text-gray-600">Machine operators, CNC/VMC operators, certified welders, technicians, and quality inspectors.</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
-                <h3 class="text-xl font-bold text-blue-900 mb-2">Skilled & Technical Jobs</h3>
-                <p class="text-gray-600">Certified Electricians, Plumbers, Machine Technicians, Quality Control Staff.</p>
+            <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-red-600">
+                <i class="fa-solid fa-users text-red-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Semi-Skilled & Unskilled</h3>
+                <p class="text-gray-600">Assembly line workers, helpers, loading/unloading staff, and general industrial labor.</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
-                <h3 class="text-xl font-bold text-blue-900 mb-2">Unskilled & Semi-Skilled</h3>
-                <p class="text-gray-600">General Helpers, Loading/Unloading Staff, Factory Assistants, Packaging Hands.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
-                <h3 class="text-xl font-bold text-blue-900 mb-2">Office & Support Staff</h3>
-                <p class="text-gray-600">Back office staff, Data Entry Operators, Receptionists, Administrative Assistants.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
-                <h3 class="text-xl font-bold text-blue-900 mb-2">Housekeeping & Security</h3>
-                <p class="text-gray-600">Facility Cleaners, Industrial Housekeeping Staff, Trained Male & Female Security Guards.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
-                <h3 class="text-xl font-bold text-blue-900 mb-2">Male & Female Staffing</h3>
-                <p class="text-gray-600">Flexible staffing deployment options available for all shift configurations across industries.</p>
+            <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-red-600">
+                <i class="fa-solid fa-broom text-red-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Housekeeping & Security</h3>
+                <p class="text-gray-600">Professional plant maintenance crew, facility cleaning staff, and trained security personnel.</p>
             </div>
         </div>
-    </main>
+    </div>
 
-    <footer class="bg-blue-950 text-white py-6 text-center">
-        <p>&copy; 2026 Pindari Enterprises. All rights reserved.</p>
+    <footer class="bg-gray-900 text-white py-8 mt-auto border-t-4 border-red-600">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-xl font-bold mb-2">PINDARI ENTERPRISES</h3>
+            <p class="text-gray-400 text-sm mb-4">Sunrise Tower, Nigdi, Pune - 411044 | Contact: +91 9860109069</p>
+            <p class="text-gray-500 text-xs">&copy; 2026 Pindari Enterprises. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <a href="https://wa.me/919860109069?text=Hello%20Pindari%20Enterprises,%20I%20have%20an%20inquiry." target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition z-50">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
 </body>
 </html>
